@@ -18,7 +18,7 @@ app.use(cors({
 connectDB();
 
 // Middleware
-app.use(express.json()); // ВАЖНО! Без этого JSON не будет читаться
+app.use(express.json()); 
 
 // Роуты
 app.use('/api/notes', noteRouter);
